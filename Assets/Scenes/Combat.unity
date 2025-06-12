@@ -133,6 +133,8 @@ GameObject:
   - component: {fileID: 1033243265}
   - component: {fileID: 1033243264}
   - component: {fileID: 1033243266}
+  - component: {fileID: 1033243267}
+  - component: {fileID: 1033243268}
   m_Layer: 0
   m_Name: Short-Lazer-Ship
   m_TagString: Untagged
@@ -220,6 +222,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb4b2ede51173194f9cdfac9fb8f04fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1033243267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033243263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f36bb360669b0a545b93ce92d3d0abe9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireRate: 0
+  projectileObject: {fileID: 0}
+  nextFire: 0
+  weaponPower: 1
+  guns:
+    rightGun: {fileID: 0}
+    leftGun: {fileID: 0}
+    centralGun: {fileID: 0}
+    leftGunVFX: {fileID: 0}
+    rightGunVFX: {fileID: 0}
+    centralGunVFX: {fileID: 0}
+  maxweaponPower: 4
+--- !u!114 &1033243268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033243263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ec1810c16bcc854ab2a2039a7579afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 6274233213771212690, guid: dcb12d2e602e19f45af26311abfc9fe0,
+    type: 3}
+  shootingInterval: 0.1
 --- !u!1 &1453434784
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,3 +442,72 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &8133211398446371669
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 256900600507486579, guid: dcb12d2e602e19f45af26311abfc9fe0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 256900600507486579, guid: dcb12d2e602e19f45af26311abfc9fe0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.004
+      objectReference: {fileID: 0}
+    - target: {fileID: 256900600507486579, guid: dcb12d2e602e19f45af26311abfc9fe0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 256900600507486579, guid: dcb12d2e602e19f45af26311abfc9fe0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 256900600507486579, guid: dcb12d2e602e19f45af26311abfc9fe0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 256900600507486579, guid: dcb12d2e602e19f45af26311abfc9fe0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 256900600507486579, guid: dcb12d2e602e19f45af26311abfc9fe0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 256900600507486579, guid: dcb12d2e602e19f45af26311abfc9fe0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 256900600507486579, guid: dcb12d2e602e19f45af26311abfc9fe0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 256900600507486579, guid: dcb12d2e602e19f45af26311abfc9fe0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 256900600507486579, guid: dcb12d2e602e19f45af26311abfc9fe0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6274233213771212690, guid: dcb12d2e602e19f45af26311abfc9fe0,
+        type: 3}
+      propertyPath: m_Name
+      value: Machine Gun
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dcb12d2e602e19f45af26311abfc9fe0, type: 3}
